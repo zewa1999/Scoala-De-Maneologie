@@ -55,14 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="MainWindowUtils.cs" />
-    <Compile Include="WindowJoc.xaml.cs">
+    <Compile Include="ViewModel\MainWindowUtils.cs" />
+    <Compile Include="View\WindowJoc.xaml.cs">
       <DependentUpon>WindowJoc.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WindowJucatorNou.xaml.cs">
+    <Compile Include="View\WindowJucatorNou.xaml.cs">
       <DependentUpon>WindowJucatorNou.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -70,18 +70,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Joc.cs" />
-    <Compile Include="JocUtils.cs" />
-    <Compile Include="Jucator.cs" />
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="ViewModel\Joc.cs" />
+    <Compile Include="ViewModel\JocUtils.cs" />
+    <Compile Include="Model\Jucator.cs" />
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="WindowJoc.xaml">
+    <Page Include="View\WindowJoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WindowJucatorNou.xaml">
+    <Page Include="View\WindowJucatorNou.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

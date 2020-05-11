@@ -1,0 +1,44 @@
+﻿<Window x:Class="ScoalaDeManeologi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Invata Arta Maneologiei" Height="515.393" Width="821.918" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Resurse/Imagini/auriu.jpg">
+    <Grid Margin="0,0,-6,-2">
+        <Grid.Background>
+            <ImageBrush ImageSource="./Resurse/Imagini/auriu.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="txt_title" HorizontalAlignment="Left" Height="41" Margin="137,27,0,0" TextWrapping="Wrap" Text="Spanzuratoarea cu Smekerii Romaniei" VerticalAlignment="Top" Width="453" FontSize="22" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" IsEnabled="False">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="11.31"/>
+                    <TranslateTransform X="20"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+        <ListBox x:Name="list_users" HorizontalAlignment="Left" Height="239" Margin="259,90,0,0" VerticalAlignment="Top" Width="259" SelectedValue="{Binding Key}" FontSize="16"  FontStyle="Oblique" FontWeight="Bold" FontStretch="Expanded" Foreground="#FF00FB39" >
+            <ListBox.Background>
+                <ImageBrush ImageSource="./Resurse/Imagini/CeaMaiTare.jpg"/>
+            </ListBox.Background>
+        </ListBox>
+
+        <Button x:Name="btn_new_user" Content="Jucator Nou" HorizontalAlignment="Left" Width="134" Margin="58,258,0,159" Click="btn_Jucator_Nou" Background="#FF3E7297" Foreground="#FF21FF68" FontStyle="Oblique" FontWeight="Bold" FontSize="18" RenderTransformOrigin="0.808,0.496"/>
+        <Button x:Name="btn_delete_user" Content="Sterge Jucator" HorizontalAlignment="Left" Width="169" Margin="574,258,0,159" Click="btn_Sterge_Jucator" Background="#FF3E7297" Foreground="#FF21FF68" FontStyle="Oblique" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="btn_play" Content="Incepe Joc" HorizontalAlignment="Left" Width="134" Margin="58,90,0,327" Click="btn_IncepeJoc" Background="#FF3E7297" Foreground="#FF21FF68" FontStyle="Oblique" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="btn_cancel" Content="Afara din Ghencea" HorizontalAlignment="Left" Width="169" Margin="574,90,0,327" Click="btn_Afara_Din_Ghencea" Background="#FF3E7297" Foreground="#FF21FF68" FontStyle="Oblique" FontWeight="Bold" FontSize="18">
+
+        </Button>
+        <Image HorizontalAlignment="Left" Height="135" Margin="10,339,0,0" VerticalAlignment="Top" Width="125" Source="./Resurse/Imagini/Guta.jpg"/>
+        <Image HorizontalAlignment="Left" Height="135" Margin="172,343,0,0" VerticalAlignment="Top" Width="125" Source="./Resurse/Imagini/becali.jpg"/>
+        <Image HorizontalAlignment="Left" Height="135" Margin="671,339,0,0" VerticalAlignment="Top" Width="125" Source="./Resurse/Imagini/daniMocanu.jpg"/>
+        <Image HorizontalAlignment="Left" Height="135" Margin="326,343,0,0" VerticalAlignment="Top" Width="125" Source="./Resurse/Imagini/cristi borcea.jpg"/>
+        <Image HorizontalAlignment="Left" Height="135" Margin="486,339,0,0" VerticalAlignment="Top" Width="125" Source="./Resurse/Imagini/susanu.jpg" RenderTransformOrigin="1.243,0.576"/>
+
+        <Button x:Name="btn_start_manea" Content="Baga Maneaua" HorizontalAlignment="Left" Width="134" Margin="58,174,0,243" Click="btn_Start_Manea" Background="#FF3E7297" Foreground="#FF21FF68" FontStyle="Oblique" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="btn_opreste_manea" Content="Opreste Manea" HorizontalAlignment="Left" Width="169" Margin="574,174,0,243" Click="btn_Opreste_Manea" Background="#FF3E7297" Foreground="#FF21FF68" FontStyle="Oblique" FontWeight="Bold" FontSize="18"/>
+
+
+    </Grid>
+</Window>
